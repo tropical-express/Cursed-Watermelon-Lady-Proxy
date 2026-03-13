@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('/assets/fonts/fa.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Roboto, sans-serif;
+    color: white;
+    text-align: center;
+
+    background: #2c2f33;
+    background-image: url("cursed.jpg");
+    background-size: cover;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
+
+/* dark overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    z-index: -1;
+}
+
+.wrapper {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+/* TITLE */
+
+h1.title {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #FFF;
+
+    text-shadow: 0 3px 10px rgba(0,0,0,.6);
+}
+
+/* top bar with optional GitHub button */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 500px;
+    padding: 10px 18px;
+
+    background: rgba(0,0,0,.35);
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+/* github button (optional) */
+
+#github {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+    padding: 6px 12px;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,.08);
+
+    transition: 0.2s ease;
+}
+
+#github:hover {
+    background: rgba(255,255,255,.18);
+}
+
+/* container for search bar */
+
+.container {
+    width: 500px;
+}
+
+/* search form */
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* search bar input */
+
+.form input {
+    flex: 1;
+    height: 55px;
+
+    padding: 0 20px;
+
+    font-size: 15px;
+    color: white;
+
+    border: none;
+    outline: none;
+
+    border-radius: 999px;
+
+    background: rgba(0,0,0,.45);
+    backdrop-filter: blur(6px);
+
+    transition: 0.2s ease;
+}
+
+.form input:focus {
+    background: rgba(0,0,0,.6);
+}
+
+/* search button */
+
+.form button {
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    color: white;
+    font-size: 16px;
+
+    background: rgba(255,255,255,.1);
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.form button:hover {
+    background: rgba(255,255,255,.25);
+}
