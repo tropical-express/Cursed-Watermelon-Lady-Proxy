@@ -1,8 +1,28 @@
-# Cursed Watermelon Lady Proxy
+# Cursed Watermelon Lady Proxy 🍉👻
 
-A web proxy with a cursed watermelon theme 🍉👻.
+![GitHub Repo stars](https://img.shields.io/github/stars/tropical-express/Cursed-Watermelon-Lady-Proxy?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/tropical-express/Cursed-Watermelon-Lady-Proxy?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/tropical-express/Cursed-Watermelon-Lady-Proxy?style=for-the-badge)
+![GitHub license](https://img.shields.io/github/license/tropical-express/Cursed-Watermelon-Lady-Proxy?style=for-the-badge)
+![Node.js](https://img.shields.io/badge/node-%3E%3D16-green?style=for-the-badge&logo=node.js)
 
-## Deploying to a service
+---
+
+A **modern, floating UI web proxy** with a cursed watermelon theme. Designed to help bypass web filters while keeping a spooky and fun aesthetic.  
+
+---
+
+## Screenshot
+
+<p align="center">
+  <img src="public/screenshot.png" width="800" alt="Cursed Watermelon Lady UI">
+</p>
+
+---
+
+## Deploying to a Service
+
+Click one of the buttons below to deploy your own instance:
 
 [![Deploy to Heroku](https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/tropical-express/Cursed-Watermelon-Lady-Proxy)
 
@@ -28,28 +48,9 @@ A web proxy with a cursed watermelon theme 🍉👻.
 
 ---
 
-## Running locally
+## Running Locally
 
 ```sh
 git clone https://github.com/tropical-express/Cursed-Watermelon-Lady-Proxy.git
 cd Cursed-Watermelon-Lady-Proxy
 node server.js
-```
-
-## Options in config.json
-
-```json
-{
-  "port": "8080",
-  "ssl": false,
-  "prefix": "/web/",
-  "localAddresses": [],
-  "blockedHostnames": []
-}
-```
-
-`port` → Sets HTTP server port.
-`ssl` → Enables HTTPS if configured.
-`prefix` → Proxy URL prefix.
-`localAddresses` → Allows selecting which IP to send requests from.
-`blockedHostnames` → Prevents access to listed domains.
