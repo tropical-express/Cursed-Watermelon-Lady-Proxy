@@ -20,7 +20,7 @@ A web proxy for use in combating web filters.
 ## Running locally
 
 ```sh
-git clone https://github.com/titaniumnetwork-dev/alloyproxy.git
+git clone https://github.com/tropical-express/Cursed-Watermelon-Lady-Proxy.git
 cd alloyproxy
 node server.js
 ```
@@ -46,4 +46,5 @@ node server.js
 `"localAddresses": [ "0.0.0.0" ]` = Allows you to choose which IP to make the request from. If there are multiple IP's then the IP chosen will be randomized.
 
 `"blockedHostnames": [ "example.org", "example.com" ]` = If the hostname of the proxy URL matches any of the URL hostnames listed in the array, the request to the server will be cancelled.
+
 
